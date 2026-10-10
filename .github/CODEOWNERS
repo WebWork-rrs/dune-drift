@@ -1,0 +1,21 @@
+# CODEOWNERS — auto-assigns reviewers to PRs by path
+# Format: <pattern> <@github-username or @org/team>
+# Last match wins. Docs: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Default owner for everything
+*                           @WebWork-rrs
+
+# Core configuration — owner review required
+CLAUDE.md                   @WebWork-rrs
+.claude/                    @WebWork-rrs
+settings.json               @WebWork-rrs
+
+# Skills and agents — high-impact, review carefully
+.claude/skills/             @WebWork-rrs
+.claude/agents/             @WebWork-rrs
+.claude/hooks/              @WebWork-rrs
+
+# Review responsibility for this adaptation; original authorship is in CREDITS.md.
+tools/codex/                @WebWork-rrs
+.agents/                    @WebWork-rrs
+.codex/                     @WebWork-rrs
